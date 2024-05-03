@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import anasayfa.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('anasayfa/', admin.site.urls),
+    path('anasayfa/', views.xxx),
 ]
